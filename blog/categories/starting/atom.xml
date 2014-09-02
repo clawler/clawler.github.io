@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Starting | Rambles]]></title>
+  <link href="http://clawler.github.io/blog/categories/starting/atom.xml" rel="self"/>
+  <link href="http://clawler.github.io/"/>
+  <updated>2014-09-02T02:40:09-07:00</updated>
+  <id>http://clawler.github.io/</id>
+  <author>
+    <name><![CDATA[Casey Lawler]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[First Post]]></title>
+    <link href="http://clawler.github.io/blog/2014/09/02/first-post/"/>
+    <updated>2014-09-02T02:00:18-07:00</updated>
+    <id>http://clawler.github.io/blog/2014/09/02/first-post</id>
+    <content type="html"><![CDATA[<p>First blog posts are always so awkward.</p>
+
+<p>This octopress thing is going to <em>force</em> me to use markdown so the rest of this
+post is going to be pretty contrived.</p>
+
+<p>This is a <a href="http://www.caseylawler.com">test link to my personal website</a>.
+You&rsquo;ll note that this should link directly back here.</p>
+
+<h3>Here is one of my favorite quotes by <a href="https://www.goodreads.com/author/show/65678.Miranda_July">Miranda July</a>:</h3>
+
+<blockquote><p>What a terrible mistake to let go of something wonderful for something real.</p></blockquote>
+
+<p>Hopefully this page will render properly so I can get to writing about things
+that actually mean something to me.</p>
+
+<p>Stay tuned!</p>
+]]></content>
+  </entry>
+  
+</feed>

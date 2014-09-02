@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://clawler.github.io/sitemap.xml 
