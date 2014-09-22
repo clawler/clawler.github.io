@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Gems | Rambles]]></title>
+  <link href="http://clawler.github.io/blog/categories/gems/atom.xml" rel="self"/>
+  <link href="http://clawler.github.io/"/>
+  <updated>2014-09-22T14:36:27-07:00</updated>
+  <id>http://clawler.github.io/</id>
+  <author>
+    <name><![CDATA[Casey Lawler]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA['Unpacking Gems']]></title>
+    <link href="http://clawler.github.io/blog/2014/09/22/unpacking-gems/"/>
+    <updated>2014-09-22T13:21:55-07:00</updated>
+    <id>http://clawler.github.io/blog/2014/09/22/unpacking-gems</id>
+    <content type="html"><![CDATA[<p>This might be pretty obvious to more seasoned Rubyites, but I&rsquo;m making a note
+of it here because this was news to me.</p>
+
+<p>I often come across gems whose source code I want to read.</p>
+
+<p>In a pinch, I&rsquo;ll head to <a href="https://rubygems.org">RubyGems</a>, find the gem that
+I&rsquo;m looking for, get linked to the repo, and view the gem&rsquo;s source code through
+my web browser, typically with GitHub&rsquo;s web viewer.</p>
+
+<p>If I need to roll my sleeves up and I want to mess with the gem source, then
+I&rsquo;d have to find a git clone link, switch back to my terminal, run git clone,
+check out the appropriate git tag for the version of the gem that I want to
+examine, etc. This can be a drag, and most of the time I&rsquo;m not looking to
+contribute - I just want to read the source more comfortably.</p>
+
+<p>You can unpack gems to your current working directory and browse their source
+code from the comfort of your text editor with this incantation:</p>
+
+<pre><code>gem unpack [gem_name]
+</code></pre>
+
+<p>Note that if you have multiple versions of a given gem installed at once, you
+can specify the version to unpack or have it default to the highest installed
+version number.</p>
+
+<p>Visit <a href="http://stackoverflow.com/questions/10453249/viewing-a-gems-source-code">this SO page</a>
+for more details, but here are the important bits from the help output:</p>
+
+<pre><code>Usage: gem unpack GEMNAME [options]
+
+  Options:
+        --target=DIR                 target directory for unpacking
+        --spec                       unpack the gem specification
+    -v, --version VERSION            Specify version of gem to unpack
+
+
+  Common Options:
+    -h, --help                       Get help on this command
+    -V, --[no-]verbose               Set the verbose level of output
+    -q, --quiet                      Silence commands
+        --config-file FILE           Use this config file instead of default
+        --backtrace                  Show stack backtrace on errors
+        --debug                      Turn on Ruby debugging
+
+
+  Arguments:
+    GEMNAME       name of gem to unpack
+
+  Summary:
+    Unpack an installed gem to the current directory
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

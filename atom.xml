@@ -4,7 +4,7 @@
   <title><![CDATA[Rambles]]></title>
   <link href="http://clawler.github.io/atom.xml" rel="self"/>
   <link href="http://clawler.github.io/"/>
-  <updated>2014-09-02T02:40:09-07:00</updated>
+  <updated>2014-09-22T14:36:27-07:00</updated>
   <id>http://clawler.github.io/</id>
   <author>
     <name><![CDATA[Casey Lawler]]></name>
@@ -12,6 +12,90 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA['Unpacking Gems']]></title>
+    <link href="http://clawler.github.io/blog/2014/09/22/unpacking-gems/"/>
+    <updated>2014-09-22T13:21:55-07:00</updated>
+    <id>http://clawler.github.io/blog/2014/09/22/unpacking-gems</id>
+    <content type="html"><![CDATA[<p>This might be pretty obvious to more seasoned Rubyites, but I&rsquo;m making a note
+of it here because this was news to me.</p>
+
+<p>I often come across gems whose source code I want to read.</p>
+
+<p>In a pinch, I&rsquo;ll head to <a href="https://rubygems.org">RubyGems</a>, find the gem that
+I&rsquo;m looking for, get linked to the repo, and view the gem&rsquo;s source code through
+my web browser, typically with GitHub&rsquo;s web viewer.</p>
+
+<p>If I need to roll my sleeves up and I want to mess with the gem source, then
+I&rsquo;d have to find a git clone link, switch back to my terminal, run git clone,
+check out the appropriate git tag for the version of the gem that I want to
+examine, etc. This can be a drag, and most of the time I&rsquo;m not looking to
+contribute - I just want to read the source more comfortably.</p>
+
+<p>You can unpack gems to your current working directory and browse their source
+code from the comfort of your text editor with this incantation:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem unpack [gem_name]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that if you have multiple versions of a given gem installed at once, you
+can specify the version to unpack or have it default to the highest installed
+version number.</p>
+
+<p>Visit <a href="http://stackoverflow.com/questions/10453249/viewing-a-gems-source-code">this SO page</a>
+for more details, but here are the important bits from the help output:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Usage: gem unpack GEMNAME [options]
+</span><span class='line'>
+</span><span class='line'>  Options:
+</span><span class='line'>        --target=DIR                 target directory for unpacking
+</span><span class='line'>        --spec                       unpack the gem specification
+</span><span class='line'>    -v, --version VERSION            Specify version of gem to unpack
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>  Common Options:
+</span><span class='line'>    -h, --help                       Get help on this command
+</span><span class='line'>    -V, --[no-]verbose               Set the verbose level of output
+</span><span class='line'>    -q, --quiet                      Silence commands
+</span><span class='line'>        --config-file FILE           Use this config file instead of default
+</span><span class='line'>        --backtrace                  Show stack backtrace on errors
+</span><span class='line'>        --debug                      Turn on Ruby debugging
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>  Arguments:
+</span><span class='line'>    GEMNAME       name of gem to unpack
+</span><span class='line'>
+</span><span class='line'>  Summary:
+</span><span class='line'>    Unpack an installed gem to the current directory</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First Post]]></title>
