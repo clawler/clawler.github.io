@@ -4,7 +4,7 @@
   <title><![CDATA[Rambles]]></title>
   <link href="http://clawler.github.io/atom.xml" rel="self"/>
   <link href="http://clawler.github.io/"/>
-  <updated>2014-09-22T14:36:27-07:00</updated>
+  <updated>2014-09-24T01:29:04-07:00</updated>
   <id>http://clawler.github.io/</id>
   <author>
     <name><![CDATA[Casey Lawler]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA['Chrome Behaving Weirdly']]></title>
+    <link href="http://clawler.github.io/blog/2014/09/23/chrome-slashes/"/>
+    <updated>2014-09-23T23:48:43-07:00</updated>
+    <id>http://clawler.github.io/blog/2014/09/23/chrome-slashes</id>
+    <content type="html"><![CDATA[<p>Tossing this into the random-stuff-I-learned-today bucket.</p>
+
+<p>Today I was messing around with Google Chrome, and I found out that unlike
+Firefox and Safari, it <a href="https://code.google.com/p/chromium/issues/detail?id=346083">treats frontslashes the same way as backslashes in hrefs</a>.</p>
+
+<p>A Chromium developer offers their thoughts on this:</p>
+
+<blockquote><p>&hellip;the backslash was intended to provide compatibility for a Windows world, and
+[Chrome will] take a more-or-less arbitrary number of initial slashes
+following the colon in some cases.</p></blockquote>
+
+<p>Try clicking the following links in Firefox, Safari, and Chrome to get a better
+sense of what this means:</p>
+
+<p><a href="http://google.com">&lt;a href=&ldquo;http://google.com&rdquo;></a></p>
+
+<p><a href="http:\\google.com">&lt;a href=&ldquo;http:&#92;google.com&rdquo;></a></p>
+
+<p><a href="http:////\google.com">&lt;a href=&ldquo;http:\//\//\google.com&rdquo;></a></p>
+
+<p><a href="//google.com">&lt;a href=&ldquo;//google.com&rdquo;></a></p>
+
+<p><a href="\\google.com">&lt;a href=&ldquo;&#92;google.com&rdquo;></a></p>
+
+<p><a href="////\google.com">&lt;a href=&ldquo;\//\//\google.com&rdquo;></a></p>
+
+<p>lolwut?</p>
+
+<p>Now, this is admittedly super contextual, but this could mean the difference
+between a URI filter spitting out malformed garbage that doesn&rsquo;t link properly
+and that same URI filter spitting out a valid link in Chrome. Construct your
+whitelists and filters with care!</p>
+
+<p>I&rsquo;ve hardly ever had reason to question Chrome&rsquo;s behavior and my eyes glaze
+over re: Windows compatibility, but this is a great reminder that
+browsers do have their subtle differences which sometimes manifest in
+surprising ways.</p>
+
+<p>Pretty unrelated: I also stumbled upon <a href="http://garage4hackers.com">Garage4Hackers</a>
+which I didn&rsquo;t know is a thing. Might be worth checking out if you&rsquo;re into
+security stuff.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA['Unpacking Gems']]></title>
